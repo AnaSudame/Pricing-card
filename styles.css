@@ -1,0 +1,129 @@
+html{
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+body{
+  margin:0;
+}
+.container{
+  width: 700px;
+  height: 600px;
+  background-color:#E8E8DF;
+  margin: 10px 10px 30px 30px;
+  padding-top: 20px
+}
+
+.sec-box{
+  display:flex;
+
+}
+.box1, .sec-box{
+
+  margin-left: 70px;
+   background-color:white;
+
+}
+
+.box1{
+  border: solid white;
+  border-bottom:none;
+ width : 81%;
+  height: 35%;
+  margin-top:80px;
+ padding-top:10px;
+  border-radius: 5px 5px 0 0;
+
+}
+
+.sec-box{
+  border-radius: 0 0 5px 5px;
+  width: 81%;
+  height: 40%;
+
+}
+
+.box2, .box3{
+  width: 50%;
+
+  background-color: #16F0E2;
+  color:white;  border-radius: 0 0 0 5px;
+
+}
+
+.box3{
+  border-left:none;
+  border-radius: 0 0 5px 0;
+
+}
+
+h3, h4, p, button{
+  margin-left: 30px;
+}
+
+#light-box{
+  opacity: 0.7;
+}
+h3{
+  color: #16F0E2;
+}
+#neon{
+  color:#C5FC4B;}
+
+
+#grayish{
+  color:#91B3AB;
+}
+span{
+  font-size: 20px;
+}
+.button{
+
+  background-color: #C5FC4B;
+  color: white;
+  font-weight: bold;
+   padding: 8px 50px;
+  border:none; width:60%;
+
+  font-size: 13px;
+  border-radius: 5px;
+
+}
+.button:hover {
+  background-color: #4CAF50; /* Green */}
+
+  @media screen and (max-width: 800px) {
+  .container{
+    width: 70%; /* The width is 100%, when the viewport is 800px or smaller */
+    height: 30%;
+  }}
+
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .sec-box {
+      flex-direction: column;
+      width:80%;  background-color:#E8E8DF;
+      margin-bottom:5px;
+      padding-bottom: 15px;
+
+
+  }}
+  @media (max-width : 800px){
+     .box2, .box3{
+      width: 87.5%;
+      padding:5px;
+
+    }
+  }
+  @media (max-width : 800px){
+    .box1{
+    width: 70%;
+    margin-top:5px;
+
+      padding-bottom: 10px;
+      padding-right: 10px;
+    }
+  }
